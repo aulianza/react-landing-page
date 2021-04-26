@@ -148,7 +148,7 @@ export default function Homepage() {
                             </div>
                             <div className="tiles-wrap">
                                 {listPricing.map((list, index) => 
-                                    <Card hasShadow delayInMS={index * 500}>
+                                    <Card hasShadow key={index} delayInMS={index * 500}>
                                         <div className="pricing-item-content">
                                             <div className="pricing-item-header pb-24 mb-24">
                                                 <div className="pricing-item-price mb-4">
